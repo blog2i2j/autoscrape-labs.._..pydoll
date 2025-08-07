@@ -785,6 +785,8 @@
       
         
       
+        
+      
     
     
     
@@ -908,6 +910,29 @@
   
   <span class="md-ellipsis">
     标签页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../browser/requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    请求
     
   </span>
   
@@ -1810,6 +1835,22 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1858,12 +1899,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../protocol/commands/" class="md-nav__link">
+      <a href="../../protocol/base/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    命令
+    基础类型
     
   </span>
   
@@ -1881,12 +1922,196 @@
   
   
     <li class="md-nav__item">
-      <a href="../../protocol/events/" class="md-nav__link">
+      <a href="../../protocol/browser/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    事件
+    浏览器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/dom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DOM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/fetch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    获取
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    输入
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    网络
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    页面
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/runtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行时
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    存储
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../protocol/target/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    目标
     
   </span>
   
@@ -2591,14 +2816,23 @@ Runtime.callFunctionOn command.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>AddBindingCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to add a JavaScript binding.</p>
+                <p>Command object to add a JavaScript binding.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;AddBindingCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.AddBindingCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.AddBindingCommand">AddBindingCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -2708,14 +2942,23 @@ of reference.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.runtime.responses.AwaitPromiseResponse">AwaitPromiseResponse</span>]</code>
-                </span>
+                <code>AwaitPromiseCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[AwaitPromiseResponse]: Command object to await a promise.</p>
+                <p>Command object to await a promise.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;AwaitPromiseCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.AwaitPromiseCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.AwaitPromiseCommand">AwaitPromiseCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -2801,7 +3044,7 @@ of reference.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="list">list</span>[<span title="pydoll.protocol.runtime.params.CallArgument">CallArgument</span>]]</code>
+                      <code><span title="typing.Optional">Optional</span>[<span title="list">list</span>[<a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-class&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;CallArgument&lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.CallArgument&lt;/code&gt;)" href="../../protocol/runtime/#pydoll.protocol.runtime.types.CallArgument">CallArgument</a>]]</code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
@@ -2923,7 +3166,7 @@ function in.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="str">str</span>]</code>
+                      <code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
@@ -3005,7 +3248,7 @@ the result.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="pydoll.protocol.runtime.params.SerializationOptions">SerializationOptions</span>]</code>
+                      <code><span title="typing.Optional">Optional</span>[<a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-class&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;SerializationOptions&lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.SerializationOptions&lt;/code&gt;)" href="../../protocol/runtime/#pydoll.protocol.runtime.types.SerializationOptions">SerializationOptions</a>]</code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
@@ -3028,14 +3271,23 @@ the result.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.runtime.responses.CallFunctionOnResponse">CallFunctionOnResponse</span>]</code>
-                </span>
+                <code>CallFunctionOnCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[CallFunctionOnResponse]: Command object to call a function on an object.</p>
+                <p>Command object to call a function on an object.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;CallFunctionOnCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.CallFunctionOnCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.CallFunctionOnCommand">CallFunctionOnCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -3058,7 +3310,7 @@ the result.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">compile_script</span><span class="p">(</span><span class="n">expression</span><span class="p">,</span> <span class="n">source_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">persist_script</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">execution_context_id</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">compile_script</span><span class="p">(</span><span class="n">expression</span><span class="p">,</span> <span class="n">source_url</span><span class="p">,</span> <span class="n">persist_script</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">execution_context_id</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3101,11 +3353,7 @@ the result.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="str">str</span>]</code>
-                  </span>
-                  <span class="doc-param-default">
-                    <b>DEFAULT:</b>
-                      <code>None</code>
+                      <code><span title="str">str</span></code>
                   </span>
               </p>
             </td>
@@ -3121,11 +3369,11 @@ the result.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="bool">bool</span>]</code>
+                      <code><span title="bool">bool</span></code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
-                      <code>None</code>
+                      <code>False</code>
                   </span>
               </p>
             </td>
@@ -3142,7 +3390,7 @@ the script in.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="str">str</span>]</code>
+                      <code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
@@ -3165,14 +3413,23 @@ the script in.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.runtime.responses.CompileScriptResponse">CompileScriptResponse</span>]</code>
-                </span>
+                <code>CompileScriptCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[CompileScriptResponse]: Command object to compile a script.</p>
+                <p>Command object to compile a script.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;CompileScriptCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.CompileScriptCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.CompileScriptCommand">CompileScriptCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -3213,14 +3470,23 @@ the script in.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>DisableCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to disable the runtime domain.</p>
+                <p>Command object to disable the runtime domain.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;DisableCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.DisableCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.DisableCommand">DisableCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -3261,14 +3527,23 @@ the script in.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>EnableCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to enable the runtime domain.</p>
+                <p>Command object to enable the runtime domain.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;EnableCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.EnableCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.EnableCommand">EnableCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -3394,7 +3669,7 @@ the script in.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="str">str</span>]</code>
+                      <code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
@@ -3617,7 +3892,7 @@ for the result.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="pydoll.protocol.runtime.params.SerializationOptions">SerializationOptions</span>]</code>
+                      <code><span title="typing.Optional">Optional</span>[<a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-class&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;SerializationOptions&lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.SerializationOptions&lt;/code&gt;)" href="../../protocol/runtime/#pydoll.protocol.runtime.types.SerializationOptions">SerializationOptions</a>]</code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
@@ -3640,14 +3915,23 @@ for the result.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.runtime.responses.EvaluateResponse">EvaluateResponse</span>]</code>
-                </span>
+                <code>EvaluateCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[EvaluateResponse]: Command object to evaluate JavaScript.</p>
+                <p>Command object to evaluate JavaScript.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;EvaluateCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.EvaluateCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.EvaluateCommand">EvaluateCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -3797,14 +4081,23 @@ properties.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.runtime.responses.GetPropertiesResponse">GetPropertiesResponse</span>]</code>
-                </span>
+                <code>GetPropertiesCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[GetPropertiesResponse]: Command object to get object properties.</p>
+                <p>Command object to get object properties.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;GetPropertiesCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.GetPropertiesCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.GetPropertiesCommand">GetPropertiesCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -3855,7 +4148,7 @@ names from.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="str">str</span>]</code>
+                      <code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
@@ -3878,15 +4171,24 @@ names from.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.runtime.responses.GlobalLexicalScopeNamesResponse">GlobalLexicalScopeNamesResponse</span>]</code>
-                </span>
+                <code>GlobalLexicalScopeNamesCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[GlobalLexicalScopeNamesResponse]: Command object to get global lexical
+                <p>Command object to get global lexical
 scope names.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;GlobalLexicalScopeNamesCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.GlobalLexicalScopeNamesCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.GlobalLexicalScopeNamesCommand">GlobalLexicalScopeNamesCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -3975,14 +4277,23 @@ scope names.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.runtime.responses.QueryObjectsResponse">QueryObjectsResponse</span>]</code>
-                </span>
+                <code>QueryObjectsCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[QueryObjectsResponse]: Command object to query objects.</p>
+                <p>Command object to query objects.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;QueryObjectsCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.QueryObjectsCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.QueryObjectsCommand">QueryObjectsCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -4051,14 +4362,23 @@ scope names.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>ReleaseObjectCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to release an object.</p>
+                <p>Command object to release an object.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;ReleaseObjectCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.ReleaseObjectCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.ReleaseObjectCommand">ReleaseObjectCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -4127,14 +4447,23 @@ scope names.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>ReleaseObjectGroupCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to release an object group.</p>
+                <p>Command object to release an object group.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;ReleaseObjectGroupCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.ReleaseObjectGroupCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.ReleaseObjectGroupCommand">ReleaseObjectGroupCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -4203,14 +4532,23 @@ scope names.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>RemoveBindingCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to remove a JavaScript binding.</p>
+                <p>Command object to remove a JavaScript binding.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;RemoveBindingCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.RemoveBindingCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.RemoveBindingCommand">RemoveBindingCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -4276,7 +4614,7 @@ scope names.</p>
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="str">str</span>]</code>
+                      <code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>
                   </span>
                   <span class="doc-param-default">
                     <b>DEFAULT:</b>
@@ -4420,14 +4758,23 @@ of reference.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.runtime.responses.RunScriptResponse">RunScriptResponse</span>]</code>
-                </span>
+                <code>RunScriptCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[RunScriptResponse]: Command object to run a script.</p>
+                <p>Command object to run a script.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;RunScriptCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.RunScriptCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.RunScriptCommand">RunScriptCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -4496,14 +4843,23 @@ of reference.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>SetAsyncCallStackDepthCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to set async call stack depth.</p>
+                <p>Command object to set async call stack depth.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;SetAsyncCallStackDepthCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.SetAsyncCallStackDepthCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.SetAsyncCallStackDepthCommand">SetAsyncCallStackDepthCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -4572,14 +4928,24 @@ of reference.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>SetCustomObjectFormatterEnabledCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to enable/disable custom object formatters.</p>
+                <p>Command object to enable/disable custom
+object formatters.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;SetCustomObjectFormatterEnabledCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.SetCustomObjectFormatterEnabledCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.SetCustomObjectFormatterEnabledCommand">SetCustomObjectFormatterEnabledCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
@@ -4648,14 +5014,23 @@ of reference.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                <span class="doc-returns-annotation">
-                    <code><span title="pydoll.protocol.base.Command">Command</span>[<span title="pydoll.protocol.base.Response">Response</span>]</code>
-                </span>
+                <code>SetMaxCallStackSizeToCaptureCommand</code>
             </td>
             <td class="doc-returns-details">
               <div class="doc-md-description">
-                <p>Command[Response]: Command object to set max call stack size.</p>
+                <p>Command object to set max call stack size.</p>
               </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;SetMaxCallStackSizeToCaptureCommand&lt;/span&gt;
+
+
+  &lt;span class=&quot;doc doc-labels&quot;&gt;
+      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
+  &lt;/span&gt; (&lt;code&gt;pydoll.protocol.runtime.methods.SetMaxCallStackSizeToCaptureCommand&lt;/code&gt;)" href="../../../../api/protocol/runtime/#pydoll.protocol.runtime.methods.SetMaxCallStackSizeToCaptureCommand">SetMaxCallStackSizeToCaptureCommand</a></code>
+                  </span>
+                </p>
             </td>
           </tr>
       </tbody>
