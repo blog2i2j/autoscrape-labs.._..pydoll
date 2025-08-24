@@ -4,7 +4,6 @@
 <h1 align="center">Pydoll: Automate the Web, Naturally</h1>
 
 <p align="center">
-    <a href="https://github.com/autoscrape-labs/pydoll/stargazers"><img src="https://img.shields.io/github/stars/autoscrape-labs/pydoll?style=social"></a>
     <a href="https://codecov.io/gh/autoscrape-labs/pydoll" >
         <img src="https://codecov.io/gh/autoscrape-labs/pydoll/graph/badge.svg?token=40I938OGM9"/>
     </a>
@@ -18,14 +17,11 @@
 <p align="center">
   📖 <a href="https://pydoll.tech/">Documentation</a> •
   🚀 <a href="#-zero-to-hero-in-seconds">Zero to Hero</a> •
-  ⚡ <a href="#-game-changing-features">Game Changers</a> •
+  ⚡ <a href="#-standout-features">Standout Features</a> •
   🛠️ <a href="#-advanced-magic">Advanced Magic</a> •
-  💖 <a href="#-support-my-work">Support</a>
+  💖 <a href="#-support-the-project">Support</a>
 </p>
-
----
-
-## 🎯 **Stop Fighting. Start Automating.**
+<br>
 
 You know that feeling when you need to automate something on the web and you spend hours just trying to get your environment working? We've all been there.
 
@@ -39,12 +35,10 @@ Just `pip install pydoll-python` and you're automating.
   <h4>Give it a star if you appreciate tools that just work! ⭐</h4>
   <sub>(Your stars fuel our development and bug fixes)</sub>
 </div>
+<br>
 
----
 
-## 🔥 **Why Pydoll Stands Out**
-
-### **Zero Configuration. Zero Drivers. Zero Headaches.**
+#### **Zero configuration. Zero drivers. Zero headaches.**
 ```python
 # This is literally all you need:
 from pydoll.browser import Chrome
@@ -55,7 +49,7 @@ async with Chrome() as browser:
     # You're automating. That's it.
 ```
 
-### ⚡ **Async-First Architecture for Performance**
+#### **Async-first architecture for performance**
 Built from day one for async/await. Run multiple tabs simultaneously with true concurrency:
 ```python
 # Multiple tabs? Multiple sites? No problem.
@@ -67,7 +61,7 @@ tasks = [
 results = await asyncio.gather(*tasks)  # Fast concurrent execution
 ```
 
-### 🎯 **Intuitive API Design**
+#### **Intuitive API design**
 Finding elements feels like natural language:
 ```python
 # This reads like English:
@@ -78,7 +72,7 @@ await button.click()
 element = await tab.query('//div[@data-testid="awesome-element"]')
 ```
 
-### 🛡️ **Full Type Safety = Fewer Bugs**
+#### **Full type safety**
 Every method, every parameter, every return value is fully typed. Your IDE becomes your best friend:
 ```python
 # The IDE knows exactly what each call returns:
@@ -90,29 +84,28 @@ await tab.find(id='username', raise_exc=False)  # → WebElement | None
 await element.type_text('hello')  # IDE knows all available methods
 ```
 
-### 🎨 **Human-Like Interactions**
+#### **Human-like interactions**
 Pydoll doesn't just click - it behaves like a real human. Natural mouse movements, realistic typing patterns, smart waits.
 
 **Ethical Note**: Due to these realistic interaction patterns, Pydoll may bypass some behavioral detection systems. Please use responsibly and respect website terms of service.
 
----
 
-## 🚀 **Just Getting Started?**
+#### **Just getting started?**
 
 Impressed by what you've seen? **This is just the beginning!** 
 
 Pydoll comes packed with advanced features that make complex automation scenarios effortless:
 
-- 🎯 **Event-driven automation** - React to page changes, network events, and user interactions in real-time
-- 🌐 **Request interception & monitoring** - Capture, modify, or block HTTP requests on the fly  
-- ⌨️ **Complete keyboard simulation** - Full support for complex key combinations and realistic typing patterns
-- 🔄 **Network condition simulation** - Test how your automation behaves under different network speeds
-- 📊 **Performance monitoring** - Built-in metrics for response times, resource loading, and more
-- 🎭 **Advanced stealth features** - Fine-tune browser fingerprints and behavioral patterns
+- **Event-driven automation** - React to page changes, network events, and user interactions in real-time
+- **Request interception & monitoring** - Capture, modify, or block HTTP requests on the fly  
+- **Complete keyboard simulation** - Full support for complex key combinations and realistic typing patterns
+- **Network condition simulation** - Test how your automation behaves under different network speeds
+- **Performance monitoring** - Built-in metrics for response times, resource loading, and more
+- **Advanced stealth features** - Fine-tune browser fingerprints and behavioral patterns
 
 **And this is just the beginning.** Check out our [complete documentation](https://pydoll.tech/) to discover everything Pydoll can do!
 
----
+
 
 ## 📦 **Installation**
 
@@ -122,11 +115,11 @@ pip install pydoll-python
 
 **That's literally it.** No drivers, no additional downloads, no configuration files. Install and start automating in the next 30 seconds.
 
----
+
 
 ## 🚀 **Zero to Hero in Seconds**
 
-### **Your First Automation**
+### **Your first automation**
 Let's do something cool - automated Google search that actually works:
 
 ```python
@@ -158,7 +151,7 @@ asyncio.run(google_magic())
 
 **Run this code.** Watch your browser come alive. Feel the magic.
 
-### **Data Extraction Made Ridiculously Easy**
+### **Data extraction made ridiculously easy**
 ```python
 async def extract_github_data():
     async with Chrome() as browser:
@@ -167,7 +160,9 @@ async def extract_github_data():
         
         # Extract data with readable code
         stars = await (await tab.find(id='repo-stars-counter-star')).text
-        description = await (await tab.query('//h2[contains(text(), "About")]/following-sibling::p')).text
+        description = await (await tab.query(
+            '//h2[contains(text(), "About")]/following-sibling::p')
+        ).text
         
         print(f"⭐ Stars: {stars}")
         print(f"📝 Description: {description}")
@@ -177,11 +172,10 @@ async def extract_github_data():
 
 **Beautiful, readable, and it just works.**
 
----
 
 ## ⚡ **Standout Features**
 
-### 🌐 **Browser-Context HTTP Requests** 
+### **Browser-Context HTTP Requests** 
 *A powerful approach to hybrid automation*
 
 Make HTTP requests that **automatically inherit** your browser's cookies, auth, and session state:
@@ -205,12 +199,12 @@ await tab.request.post(
 ```
 
 **Why this matters:**
-- ✅ **No session juggling** - cookies inherited automatically
-- ✅ **No CORS headaches** - requests run in browser context  
-- ✅ **No auth complexity** - login once, API forever
-- ✅ **Hybrid workflows** - UI for auth, API for speed
+- **No session juggling** - cookies inherited automatically
+- **No CORS headaches** - requests run in browser context  
+- **No auth complexity** - login once, API forever
+- **Hybrid workflows** - UI for auth, API for speed
 
-### 🎛️ **Deep Browser Customization**
+### **Deep browser customization**
 *Fine-tune every aspect of Chrome's behavior*
 
 Want to completely customize Chrome's behavior? You have access to hundreds of internal settings:
@@ -245,12 +239,12 @@ async with Chrome(options=options) as browser:
 ```
 
 **Real-world applications:**
-- 🔇 **Silent everything** - downloads, notifications, prompts
-- 🌍 **Multi-region testing** - languages, timezones, locales  
-- 🔒 **Security lockdown** - disable cameras, mics, dangerous features
-- 🎭 **Stealth mode** - customize fingerprints and behavioral patterns
+- **Silent everything** - downloads, notifications, prompts
+- **Multi-region testing** - languages, timezones, locales  
+- **Security lockdown** - disable cameras, mics, dangerous features
+- **Stealth mode** - customize fingerprints and behavioral patterns
 
-### 📥 **Bulletproof File Downloads**
+### **Bulletproof file downloads**
 *No more download race conditions*
 
 ```python
@@ -265,11 +259,10 @@ async with tab.expect_download(timeout=30) as download:
 
 Auto-cleanup, timeout handling, and zero headaches included!
 
----
 
 ## 🛠️ **Advanced Magic**
 
-### 🔍 **Smart Element Finding**
+### **Smart element finding**
 *Find elements the way your brain thinks*
 
 ```python
@@ -298,7 +291,7 @@ element = await tab.find(
 )
 ```
 
-### 🎭 **Element State Management**
+### **Element state management**
 *Wait for elements like a pro*
 
 ```python
@@ -316,7 +309,7 @@ if await element.is_visible() and await element.is_on_top():
 await element.execute_script("this.style.outline='2px solid red'")
 ```
 
-### 🚦 **Concurrent Automation**
+### **Concurrent automation**
 *Handle multiple tabs efficiently*
 
 ```python
@@ -341,7 +334,7 @@ async def scrape_multiple_sites():
 # Efficient concurrent execution
 ```
 
-### 🎨 **Custom Browser Configurations**
+### **Custom browser configurations**
 *Make Chrome behave exactly how you want*
 
 ```python
@@ -366,11 +359,11 @@ options.add_argument('--disable-dev-shm-usage')
     # Fully customized browser experience
 ```
 
----
+
 
 ## 🎉 **What's New - Latest Release**
 
-### **Smart WebElement State Management**
+### **Smart WebElement state management**
 
 We've made element interactions bulletproof with new state management:
 
@@ -393,64 +386,61 @@ result = await element.execute_script("return this.innerText", return_by_value=T
 
 **No more flaky tests or missed clicks!** These methods ensure your automation is rock-solid reliable.
 
----
 
-## 🆘 **Troubleshooting**
+## **Troubleshooting**
 
-**🚫 Browser not found?**
+**Browser not found?**
 ```python
 options = ChromiumOptions()
 options.binary_location = '/path/to/your/chrome'  # Point to your Chrome
 ```
 
-**⏰ Browser taking forever to start?**
+**Browser taking forever to start?**
 ```python
 options.start_timeout = 30  # Give it more time (especially on slower machines)
 ```
 
-**🌐 Need a proxy?**
+**Need a proxy?**
 ```python
 options.add_argument('--proxy-server=http://username:password@proxy:port')
 ```
 
-**🐳 Running in Docker?**
+**Running in Docker?**
 ```python
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')
 ```
 
-**🔒 Permissions issues?**
+**Permissions issues?**
 ```python
 options.add_argument('--disable-web-security')
 options.add_argument('--disable-features=VizDisplayCompositor')
 ```
 
----
+
 
 ## 📚 **Learn More**
 
 Ready to become a Pydoll master? Our documentation has everything:
 
-🎓 **[Complete Documentation](https://pydoll.tech/)** - Deep dives, tutorials, and examples  
-🔧 **[API Reference](https://pydoll.tech/docs/api/)** - Every method, parameter, and return type  
-🚀 **[Advanced Guides](https://pydoll.tech/docs/features/)** - Network interception, event handling, performance optimization  
+**[Complete Documentation](https://pydoll.tech/)** - Deep dives, tutorials, and examples  
+**[API Reference](https://pydoll.tech/docs/api/)** - Every method, parameter, and return type  
+**[Advanced Guides](https://pydoll.tech/docs/features/)** - Network interception, event handling, performance optimization  
 
 *Chinese documentation available at [README_zh.md](README_zh.md)*
-
----
 
 ## 🤝 **Join the Revolution**
 
 Love Pydoll? Help make it even better!
 
 **🔥 Ways to contribute:**
-- 🌟 **Star the repo** (seriously, it means everything)
-- 🐛 **Report bugs** or suggest features  
-- 📝 **Improve documentation**
-- 💻 **Submit pull requests**
-- 💬 **Share your success stories**
+- **Star the repo** (seriously, it means everything)
+- **Report bugs** or suggest features  
+- **Improve documentation**
+- **Submit pull requests**
+- **Share your success stories**
 
-**👨‍💻 Contributing Guidelines:**
+**Contributing Guidelines:**
 - Write tests for new features
 - Follow our code style (we use Ruff + MyPy)
 - Use conventional commits
@@ -458,13 +448,12 @@ Love Pydoll? Help make it even better!
 
 Check out [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide!
 
----
 
 ## 💖 **Support the Project**
 
 Building and maintaining Pydoll takes time, coffee, and lots of love. If it's saving you hours of headaches:
 
-🎯 **[Sponsor on GitHub](https://github.com/sponsors/thalissonvs)** - Get priority support and exclusive perks!
+**[Sponsor on GitHub](https://github.com/sponsors/thalissonvs)** - Get priority support and exclusive perks!
 
 **Can't sponsor right now? No worries! You can still help:**
 - ⭐ Star the repository  
@@ -475,7 +464,7 @@ Building and maintaining Pydoll takes time, coffee, and lots of love. If it's sa
 
 **Every bit of support keeps this project alive and growing! 🚀**
 
----
+
 
 ## 🎊 **Spread the Word**
 
@@ -483,15 +472,11 @@ If Pydoll made your automation easier, help others discover it too!
 
 Give it a ⭐, tell your colleagues, share it on social media, or write about your experience.
 
----
 
 ## 📄 **License**
 
 Pydoll is MIT licensed - use it for anything! See [LICENSE](LICENSE) for details.
 
----
-
 <div align="center">
   <h2><strong>Pydoll: Making Web Automation Simple and Powerful</strong></h2>
-  <sub>Made with ❤️ by developers who believe automation should be accessible</sub>
 </div>
