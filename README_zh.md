@@ -8,16 +8,16 @@
     <a href="https://codecov.io/gh/autoscrape-labs/pydoll" >
         <img src="https://codecov.io/gh/autoscrape-labs/pydoll/graph/badge.svg?token=40I938OGM9"/>
     </a>
-    <img src="https://github.com/thalissonvs/pydoll/actions/workflows/tests.yml/badge.svg" alt="Tests">
-    <img src="https://github.com/thalissonvs/pydoll/actions/workflows/ruff-ci.yml/badge.svg" alt="Ruff CI">
-    <img src="https://github.com/thalissonvs/pydoll/actions/workflows/mypy.yml/badge.svg" alt="MyPy CI">
+    <img src="https://github.com/autoscrape-labs/pydoll/actions/workflows/tests.yml/badge.svg" alt="Tests">
+    <img src="https://github.com/autoscrape-labs/pydoll/actions/workflows/ruff-ci.yml/badge.svg" alt="Ruff CI">
+    <img src="https://github.com/autoscrape-labs/pydoll/actions/workflows/mypy.yml/badge.svg" alt="MyPy CI">
     <img src="https://img.shields.io/badge/python-%3E%3D3.10-blue" alt="Python >= 3.10">
     <a href="https://deepwiki.com/autoscrape-labs/pydoll"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
 </p>
 
 
 <p align="center">
-  📖 <a href="https://autoscrape-labs.github.io/pydoll/">文档</a> •
+  📖 <a href="https://pydoll.tech/">文档</a> •
   🚀 <a href="#-getting-started">快速上手</a> •
   ⚡ <a href="#-advanced-features">高级特性</a> •
   🤝 <a href="#-contributing">贡献</a> •
@@ -41,11 +41,32 @@ Pydoll 采用全新设计理念，从零构建，直接对接 Chrome DevTools Pr
 
 ## 🌟 Pydoll 的核心优势
 
-- **零 WebDriver 依赖**：彻底告别驱动兼容性烦恼
-- **类人交互引擎**：能够通过行为验证码如 reCAPTCHA v3 或 Turnstile，取决于 IP 声誉和交互模式
-- **异步高性能**：支持高速自动化与多任务并行处理
-- **拟真交互体验**：完美复刻真实用户行为模式
-- **极简部署**：安装即用，开箱即自动化
+- **零配置复杂度**：安装即可自动化，无需驱动程序或配置文件
+- **异步优先架构**：专为高速和并发自动化而构建
+- **直观的 API 设计**：简单易读的代码，操作如同自然语言
+- **完整类型安全**：全面的类型支持，减少错误
+- **类人交互引擎**：真实的用户行为模式，自然的鼠标移动和输入时序
+
+**使用须知**：由于其真实的交互模式，Pydoll 可能会绕过某些行为检测系统。请负责任地使用并遵守网站服务条款。
+
+---
+
+## 🚀 **这只是开始？**
+
+对您所看到的印象深刻吗？**这只是冰山一角！**
+
+Pydoll 拥有丰富的高级功能，让复杂的自动化场景变得轻松：
+
+- 🎯 **事件驱动自动化** - 实时响应页面变化、网络事件和用户交互
+- 🌐 **请求拦截与监控** - 即时捕获、修改或阻断 HTTP 请求
+- ⌨️ **完整键盘模拟** - 全面支持复杂按键组合和真实输入模式
+- 🔄 **网络状况模拟** - 测试不同网络速度下的自动化表现
+- 📊 **性能监控** - 内置响应时间、资源加载等指标
+- 🎭 **高级隐身功能** - 精细调节浏览器指纹和行为模式
+
+**这仅仅是开始。** 查看我们的[完整文档](https://pydoll.tech/)，发现 Pydoll 的全部能力！
+
+---
 
 ## 最新功能
 
@@ -212,7 +233,7 @@ options.browser_preferences = {
 
 这种控制级别以前只有 Chrome 扩展开发者才能使用 - 现在它在你的自动化工具包中！
 
-查看[文档](https://autoscrape-labs.github.io/pydoll/features/custom-browser-preferences/)了解更多详情。
+查看[文档](https://pydoll.tech/docs/features/#custom-browser-preferences/)了解更多详情。
 
 ### 新的 `get_parent_element()` 方法
 检索任何 WebElement 的父元素，使导航 DOM 结构更加容易：
@@ -511,7 +532,7 @@ asyncio.run(concurrent_scraping())
 
 
 这个例子,我们成功实现了同时对两个页面的数据提取.
-还有更多强大功能！响应式自动化的事件系统、请求拦截与修改等等。赶快查阅文档!
+还有更多强大功能！响应式自动化的事件系统、请求拦截与修改等等。赶快查阅[文档](https://pydoll.tech/)!
 
 ## 🔧 快速问题排查
 
@@ -549,7 +570,7 @@ options.add_argument('--disable-dev-shm-usage')
 
 ## 📚 文档
 
-Pydoll 的完整文档、详细示例以及对所有功能的深入探讨可以通过以下链接访问： [官方文档](https://autoscrape-labs.github.io/pydoll/).
+Pydoll 的完整文档、详细示例以及对所有功能的深入探讨可以通过以下链接访问： [官方文档](https://pydoll.tech/)。
 
 文档包含以下部分:
 - **快速上手指南** - 分步教程
